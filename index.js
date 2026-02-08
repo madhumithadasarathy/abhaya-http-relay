@@ -33,6 +33,7 @@ app.post("/upload", upload.single("image"), async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("HTTP relay running on port 3000");
+app.listen(3000, "0.0.0.0", () => {
+  console.log("HTTP relay running");
 });
+
